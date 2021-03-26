@@ -10,7 +10,7 @@ BuildRequires:  meson
 BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:  pkgconfig(libwebp)
 
-Requires:       gdk-pixbuf2%{?_isa}
+Requires:       gdk-pixbuf2.0%{?_isa}
 
 %description
 webp-pixbuf-loader contains a plugin to load WebP images in GTK+ applications

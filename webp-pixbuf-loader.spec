@@ -1,5 +1,5 @@
 Name:           webp-pixbuf-loader
-Version:        0.2.1
+Version:        0.2.2
 Release:        1
 Summary:        WebP image loader for GTK+ applications
 License:        LGPLv2+

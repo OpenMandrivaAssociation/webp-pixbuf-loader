@@ -5,6 +5,7 @@ Summary:        WebP image loader for GTK+ applications
 License:        LGPLv2+
 URL:            https://github.com/aruiz/webp-pixbuf-loader
 Source0:        https://github.com/aruiz/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
+Patch0:        https://github.com/aruiz/webp-pixbuf-loader/commit/834657c8d189b6b0354401a00a842f539d7c29e4.patch
 
 BuildRequires:  meson
 BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
@@ -16,7 +17,7 @@ Requires:       gdk-pixbuf2.0%{?_isa}
 webp-pixbuf-loader contains a plugin to load WebP images in GTK+ applications
 
 %prep
-%autosetup
+%autosetup -p1
 
 %build
 %meson -Dgdk_pixbuf_query_loaders_path=gdk-pixbuf-query-loaders-%{__isa_bits}
